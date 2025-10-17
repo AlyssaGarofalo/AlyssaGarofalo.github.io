@@ -1,0 +1,123 @@
+css / styles.css
+/* Index-Style CSS */
+
+html, body {
+    font-family: 'albertus', 'albertus medium', serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #FFE1AF;
+}
+
+h1 {font-size: 2.25rem;
+    font-family: 'baskerville', 'baskerville old face', serif;
+    text-align: center;
+    color: #777C6D;
+    text-decoration: bold underline 
+}
+
+
+
+
+
+h2 {
+    font-family: 'baskerville', 'baskerville old face', serif;
+    font-size: 1.8rem;
+    color: rgb(154,63,63);;
+    text-decoration: dashed underline #777C6D;
+    
+}
+
+
+h3 {
+    font-family: 'arial', sans-serif;
+    font-size: 1.5rem; 
+    text-decoration: underline;
+    color: #777C6D;
+}
+
+
+
+h1::before,
+::content {
+    content: "\1F38d";
+    font-size: 5rem;
+    content: "\1F338";
+}
+
+ .div{ 
+    text-align: center;
+ }
+
+ 
+h2::before,
+h2::after {
+    content:\1F38d ;
+    content:\1F338;
+}
+
+nav li {
+    font-size: 1.3rem;
+    font-family: 'josefin sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+
+
+nav,
+header { text-align: center;}
+
+nav a,
+.assignments a, 
+footer a {
+    text-decoration: none;
+    color: rgb(154,63,63);
+}
+
+
+.assignments a:hover 
+.assignments a:active{
+    line-height: 1.5;;
+}
+
+.assignments li { 
+    list-style-type: "\1F38d" ;
+    
+}
+.assignments.li::before {
+    content:"\1F38d"  ;
+    font-size: 1.5rem;
+}
+.assignments a:link, 
+.assignments a:visited {
+    line-height: 1.5;
+    color: rgb(149, 124, 98);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.assignments a:hover 
+.assignments a:active{
+    text-decoration:line-through rgb(217, 111, 50) 2px;
+ text-underline-offset: 4px;}
+
+nav a:hover::before
+{
+    content: "\1F338";
+      text-decoration: underline;
+}
+
+header p {
+    font-size: 80%;
+}
+
+
+
+footer {
+    color: rgb(217, 111, 50);
+    font-style: italic;
+    line-height: 80%;
+    font-weight: 500;
+}
