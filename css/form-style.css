@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-family: 'baskerville', 'baskerville old face', serif;
+    font-size: 1.25rem;
+}
+
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: beige;
+    background-image: url(/img/formshotel.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    width: 60%;
+    background-color: rgb(154,63,63);
+    opacity: 0.8;
+    color: beige;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+nav li {
+    display: inline;
+
+}
+
+nav a {
+padding: 12px;
+background-color: rgb(119,124,109);
+border-radius: 8px;
+margin-right: 8px;
+}
+
+.policies {
+    margin-bottom: 2rem;
+    
+}
+
+form {
+    padding-left: 3rem;
+
+}
+
+label,
+span {
+    display: inline-block;
+    width: 250px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.radio label {
+   width: 12px;
+}
+
+span {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="file"],  
+input[type="checkbox"],
+input[type="password"] {
+padding: 10px;
+margin: 8px 0;
+border: none;
+border-radius: 8px;}
+
+textarea {
+    border-radius: 8px;
+}
+
+input[type="checkbox"] 
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+select {
+    height: 20px;
+}
+
+button{
+    background-color: wheat;
+    padding: .5rem;
+    color:  rgb(119,124,109);
+    width: 5rem;
+    border: none;
+    margin-bottom: 1rem;
+    margin-left: 80%;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+      margin-top: 2rem;     
+}
+
+css
+.element {
+    color: white/sets the text color to white
+}
+
+footer {
+    text-align: left;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: beige;
+}
