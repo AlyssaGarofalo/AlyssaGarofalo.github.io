@@ -1,0 +1,186 @@
+/* 
+font-family: 'Playfair Display', 
+serif, 'open-sans';
+
+*/
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'open sans', serif;
+    font-size: 1.20rem;
+    line-height: 125%;
+    color:#50504f;
+}
+
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+background-color: rgb(119,124,109);
+text-align: center;
+
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+}
+
+nav a {
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:link, 
+nav a:visited {
+    text-decoration:none;
+}
+
+nav a:hover, 
+nav a:active {
+background-color: brown;
+color: darkseagreen;
+text-decoration: underline;
+text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 6%,0;
+    text-shadow: 4px 8px 6px; 
+}
+
+
+
+
+img {
+    float: left;
+    max-width: 30%;
+    width:30%;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 50%;
+    box-shadow: 3px 5px 3px #ccc;
+    shape-outside: circle(50%);
+}
+
+header h2 {
+    margin-top: 8%; 
+}
+
+.rate {
+    clear:both;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.emoji::after {
+    content: "\1f370";
+}
+
+.details,
+.ingredients,
+.instructions,
+.nutrition {
+    width: 45%;
+    float: left;
+}
+
+.details 
+.instructions{
+    margin-right: 16%;
+    margin-left: 2%;
+}
+
+blockquote {
+    clear: both;
+    width: 200px;
+    height: 180px;
+    padding: 58px 16px 0 20px;
+    border-radius: 50%; 
+    background-color: rgba(177, 57, 9, 0.762);
+    outline: dotted 6px rgb(119,124,109);
+    outline-offset: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    margin: 40px 0 50px auto;
+    margin-top: 100px;
+    
+}
+
+blockquote small{
+    display: block;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    font-size: 0.5rem;
+    text-align: right;
+}
+
+
+
+
+footer{
+background-color: rgb(119,124,109);
+color: beige;
+padding: 1px 0px 0px 4 0;
+margin-top: 10px;
+height: auto;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-transform:uppercase;
+    text-decoration: none;
+    color: beige;
+}
+
+footer ul{
+    font-family: lato, sans-serif;
+    list-style-type: none;
+}
+
+.col1{display: block;
+    float: left;
+    width: 28%;
+}
+
+.col2{display: block;
+    float: left;
+    width: 28%;
+}
+
+.col3{display: block;
+    float: left;
+    width: 28%;
+}
+
+footer p {
+    clear:both;
+}
