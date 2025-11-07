@@ -251,6 +251,11 @@ blockquote {
 }
 
 
+footer p {
+    clear: both;
+
+}
+
 }
 
 @media (max-width: 810px) {
@@ -310,19 +315,19 @@ blockquote {
     float: none;
 }
 
-.col1{display: block;
+.col1 {display: block;
     float: left;
-    width: 27%;
+    width: 15%;
 }
 
-.col2{display: block;
+.col2 {display: block;
     float: left;
-    width: 25%;
+    width: 20%;
 }
 
-.col3{display: block;
+.col3 {display: block;
     float: left;
-    width: 25%;
+    width: 15%;
 }
 
 footer p {
