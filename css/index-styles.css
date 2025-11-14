@@ -8,6 +8,32 @@ html, body {
     color: rgb(255,225,175);
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    position: relative;
+}
+
+nav ul li {
+    margin: 20px; /* Add horizontal spacing between items */
+}
+
+nav ul li a {
+    font-size: 23px;
+    color:  rgb(154,63,63);
+    text-decoration: none;
+    display: block; /make links fill the entire list item /
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+
+
 h1 {font-size: 2.25rem;
     font-family: 'baskerville', 'baskerville old face', serif;
     text-align: center;
@@ -16,7 +42,17 @@ h1 {font-size: 2.25rem;
 }
 
 
+.red-panda-image {
+    animation: pulse 2s ease-in-out infinite;
+}
 
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); }
+    50% { 
+        transform: scale(1.05); }
+   
+}
 
 
 h2 {
@@ -24,8 +60,36 @@ h2 {
     font-size: 1.8rem;
     color: rgb(154,63,63);;
     text-decoration: dashed underline #777C6D;
-    
+   position: relative;
+   animation: slideRightReturn 4s ease-in-out forwards; /* Apply the slide-in animation */
+    opacity: 0; /* Initially hide the h2 element */
+    left: 0px; /* Start position on-screen to the left */
 }
+
+
+
+@keyframes slideRightReturn {
+    0% {
+        opacity: 0;
+        left: 0px; /* Start off-screen to the left */
+    }
+    50% {
+        opacity: 1;
+        left: 500px; /* Move slightly past the final position */
+    }
+70% {
+        opacity: 1;
+        left: 2000px; /* Slightly back to create a bounce effect */
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px; /* Final position */
+    }
+}
+
+    
+
 
 
 h3 {
@@ -56,18 +120,38 @@ h2::after {
 }
 
 nav li {
+    background-color: rgb(149, 124, 98) ;
     font-size: 1.3rem;
     font-family: 'josefin sans', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     list-style-type: none;
     text-transform: uppercase;
+    border-radius: 8px; 
 }
 
 
 
-nav,
-header { text-align: center;}
+
+
+h1 {
+color: rgb(119,124,109);
+text-align: center;
+padding: 20px;
+opacity: 0; /*initially hide the header*/
+animation: fadeIn 1s forwards; /*fade-in animation */
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /*slide in from above */`
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);/*original position */
+    }
+}
 
 nav a,
 .assignments a, 
@@ -75,6 +159,10 @@ footer a {
     text-decoration: none;
     color: rgb(154,63,63);
 }
+
+
+
+
 
 
 .assignments a:hover 
@@ -116,6 +204,7 @@ header p {
 
 
 footer {
+    text-align: right;
     color: rgb(217, 111, 50);
     font-style: italic;
     line-height: 80%;

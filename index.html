@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/index-styles.css">
  <!--<link rel="stylesheet" href="/css/style.css">-->
  <link rel="stylesheet" href="/css/index-styles.css">
+ <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     
@@ -32,9 +34,18 @@
  </nav>
 
     <h1>My Website for Web Class Assignments</h1>
+
+
+
     <div style="text-align: center;">
-    <img src="/img/red_panda_by_acdn_d628a4z-fullview.jpg" alt="Red Panda" 
-    width="600" height="400"> 
+    <img src="/img/red_panda_by_acdn_d628a4z-fullview.jpg" alt="Red Panda" width="600" height="400" class="red-panda-image" id="redPanda">
+    <script>  
+    setTimeout(function() {
+        const img = document.getElementById('redPanda').classList.remove('red-panda-image');
+    }, 5000); //Stop the animation after 5 seconds (5000 milliseconds)
+    </script>
+    </img>
+
     </div>
     <a href="https://www.deviantart.com/acdn/art/Red-Panda-628a4z"> </a>
 
@@ -45,18 +56,22 @@
          from 1:30-6:30pm in Room B218. I have a passion for dancing and rollerskating.  
     </p>
 
-    <section class="assignments">
+<section class="assignments"> 
+   
+
     <h2>Assignments</h2>
+       <element class="slide.header"> </element>
         <ul>
             <li><a href="/challenge.html">Weeks 2 and 3 Assignments: Basic HTML</a></li>
             <li><a href="https://alyssagarofalodomain.netlify.app/">Week 4: Netlify</a></li>
             <li><a href="https://alyssagarofalodomain.netlify.app/form">Week 5: Forms</a></li>
             <li><a href="https://alyssagarofalodomain.netlify.app/challenge">Week 6: Intro CSS</a></li>
             <li><a href="https://alyssagarofalodomain.netlify.app/">Week 7: Colors</a></li>
-            <li><a href="https://alyssagarofalodomain.netlify.app/form">Week 8: Form CSS</a></li>
-            <li><a href="https://alyssagarofalodomain.netlify.app/recipe">Week 9: Recipe CSS</a></li>
-            <li><a href=""></a></li>
-        </ul>
+            <li><a href="https://alyssagarofalodomain.netlify.app/form">Week 8: Box Model, Display Attribute Styling</a></li>
+            <li><a href="https://alyssagarofalodomain.netlify.app/recipe">Week 9: Floats, Google Fonts, Special Effects</a></li>
+            <li><a href="https://alyssagarofalodomain.netlify.app/recipe">Week 10: Responsive Web Design</a></li>
+            
+        </ul
 
     
 
