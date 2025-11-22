@@ -1,0 +1,131 @@
+css / styles.css
+/*grid-Style CSS */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+  background-color: brown;
+  margin: 0 auto 5px;
+  width: 1100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between; /* Changed from space-around to space-between */
+  align-items: center;
+  padding: 20px;
+  list-style-type: none; /* Add this to remove bullet points */
+  margin: 0; /* Add this to remove default ul margins */
+}
+
+nav li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Removed display: inline and margin-right */
+}
+
+nav a {
+  color: white; /* Base text color */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: normal;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-bottom: 2px solid transparent; /* Invisible border */
+}
+
+
+
+
+nav a:hover {
+  color: #ddd; /* Lighter text color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+  border-bottom: 2px solid white; /* Highlighted border */
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.parent {
+     width: 1100px;
+     height: 680px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(7, 1fr); /* 7 equal columns each taking up 1 fraction of the available space */
+     grid-template-rows: repeat(4, 1fr); /* 4 equal rows each taking up 1 fraction of the available space */
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+}
+
+.div1 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    line-height: 50%;
+
+}
+
+.div1 p{
+    font-size: 1.5rem;
+}
+
+
+/* grid area: row-start / column-start / row-end / column-end */
+
+.div1 { grid-area: 1 / 1 / 3 / 4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #919191;
+}
+
+
+.div2 { grid-area: 1 / 4 / 3 / 6; 
+    background-color: red;
+}
+
+.div3 { grid-area: 1 / 6 / 2 / 8; 
+    background-color: orange;
+}
+
+.div4 { grid-area: 2 / 6 / 3 / 8; 
+    background-color: yellow;
+}
+
+.div5 { grid-area: 3 / 1 / 5 / 4; 
+    background-color: green;
+}
+
+.div6 { grid-area: 3 / 4 / 4 / 5; 
+    background-color: blue;
+}
+
+.div7 { grid-area: 3 / 5 / 4 / 6; 
+    background-color: indigo;
+}
+
+.div8 { grid-area: 4 / 4 / 5 / 6; 
+    background-color: violet;
+}
+
+.div9 { grid-area: 3 / 6 / 5 / 8; 
+    background-color: pink;
+}
+
+footer {
+   margin-top: 20px;
+   display: flex;
+    justify-content: center;
+}
